@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · AgriConsult</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#1b5e20"/><path d="M32 52c0-12 8-18 16-20-4 10-8 15-16 20z" fill="#ffb300"/><path d="M32 52c0-12-8-18-16-20 4 10 8 15 16 20z" fill="#66bb6a"/><path d="M32 18v22" stroke="#e8f5e9" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="16" r="4" fill="#e8f5e9"/></svg>
+        <div class="logo-text">Agri<span>Consult</span></div>
+      </a>
+      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-sm nav-cta active"><i class="fas fa-headset"></i> Free Consult</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container page-hero">
+    <h1>Get in Touch</h1>
+    <p class="section-subtitle">Free 30-minute consultation. Response within 24 hours. No obligations.</p>
+  </section>
+
+  <section class="container" style="padding-bottom: 3rem;">
+    <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 2.5rem; align-items: start;" class="contact-grid">
+      <div>
+        <div class="card" style="margin-bottom: 1.2rem;">
+          <div class="card-icon"><i class="fas fa-phone"></i></div>
+          <h3>Call Us</h3>
+          <p style="margin-bottom: 0.5rem; color: var(--text); font-weight: 600; font-size: 1.05rem;">+91 98765 43210</p>
+          <p style="color: var(--text-light); font-size: 0.9rem;">Mon–Sat, 9:00 AM – 7:00 PM</p>
+        </div>
+        <div class="card" style="margin-bottom: 1.2rem;">
+          <div class="card-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Email Us</h3>
+          <p style="margin-bottom: 0.5rem; color: var(--text); font-weight: 600; font-size: 1.05rem;">help@agriconsult.in</p>
+          <p style="color: var(--text-light); font-size: 0.9rem;">Response within 24 hours</p>
+        </div>
+        <div class="card" style="margin-bottom: 1.2rem;">
+          <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Visit Us</h3>
+          <p style="margin-bottom: 0.5rem; color: var(--text); font-weight: 600; font-size: 1.05rem;">AgriConsult HQ</p>
+          <p style="color: var(--text-light); font-size: 0.9rem;">123 Green Valley Road, Pune, Maharashtra 411001</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-clock"></i></div>
+          <h3>Quick Response</h3>
+          <p style="color: var(--text-light); font-size: 0.9rem;">For urgent pest outbreak or crop emergency, use WhatsApp. Our field team responds within 2 hours.</p>
+          <button class="btn btn-sm" style="margin-top: 1rem;" onclick="showToast('Opening WhatsApp chat...')"><i class="fab fa-whatsapp"></i> WhatsApp Now</button>
+        </div>
+      </div>
+
+      <form class="form-card" id="contactForm">
+        <h2 style="margin-bottom: 0.5rem;">Send us a message</h2>
+        <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.92rem;">Tell us about your farm and we'll match you with the right expert.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" placeholder="Ramesh Kumar" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" placeholder="+91 98765 43210" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label>Farm Location</label>
+            <input type="text" placeholder="Village, District, State">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Primary Challenge *</label>
+          <select required>
+            <option value="">Select the main issue...</option>
+            <option>Soil health & fertility</option>
+            <option>Pest or disease outbreak</option>
+            <option>Irrigation & water management</option>
+            <option>Crop selection & rotation</option>
+            <option>Organic certification</option>
+            <option>Yield improvement</option>
+            <option>Market linkage</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Farm Size</label>
+            <select>
+              <option>Less than 1 acre</option>
+              <option>1–5 acres</option>
+              <option>5–20 acres</option>
+              <option>20+ acres</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Preferred Contact</label>
+            <select>
+              <option>Phone Call</option>
+              <option>WhatsApp</option>
+              <option>Email</option>
+              <option>On-site Visit</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Describe your challenge *</label>
+          <textarea rows="4" placeholder="Tell us more about your situation — crop type, symptoms, current practices, etc." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-block"><i class="fas fa-paper-plane"></i> Send Request</button>
+        <p style="text-align: center; color: var(--text-light); font-size: 0.82rem; margin-top: 1rem;"><i class="fas fa-lock"></i> Your information is confidential and never shared.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <svg class="logo-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="32" cy="32" r="30" fill="#ffb300"/>
+  <path d="M32 52c0-12 8-18 16-20-4 10-8 15-16 20z" fill="#1b5e20"/>
+  <path d="M32 52c0-12-8-18-16-20 4 10 8 15 16 20z" fill="#66bb6a"/>
+  <path d="M32 18v22" stroke="#1b5e20" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="16" r="4" fill="#1b5e20"/>
+</svg>
+            AgriConsult
+          </div>
+          <p>We respond to every farmer within 24 hours.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="dashboard.html">Dashboard</a><a href="tips.html">Tips</a><a href="appointments.html">Appointments</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Get in Touch</h4><div class="footer-contact-item"><i class="fas fa-phone"></i> +91 98765 43210</div><div class="footer-contact-item"><i class="fas fa-envelope"></i> help@agriconsult.in</div></div>
+      </div>
+      <div class="footer-bottom"><div>© 2025 AgriConsult. All rights reserved.</div><div>Made with <i class="fas fa-heart" style="color:#ff5252;"></i> for farmers</div></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <style>@media(max-width:800px){.contact-grid{grid-template-columns:1fr!important;}}</style>
+</body>
+</html>

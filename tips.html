@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips & Tricks · AgriConsult</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#1b5e20"/><path d="M32 52c0-12 8-18 16-20-4 10-8 15-16 20z" fill="#ffb300"/><path d="M32 52c0-12-8-18-16-20 4 10 8 15 16 20z" fill="#66bb6a"/><path d="M32 18v22" stroke="#e8f5e9" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="16" r="4" fill="#e8f5e9"/></svg>
+        <div class="logo-text">Agri<span>Consult</span></div>
+      </a>
+      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="tips.html" class="active">Tips</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-sm nav-cta"><i class="fas fa-headset"></i> Free Consult</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container page-hero">
+    <h1>Tips & Tricks for Farmers</h1>
+    <p class="section-subtitle">Practical, low-cost techniques you can apply this season — tested on real farms across India.</p>
+  </section>
+
+  <section class="container">
+    <div class="cards-grid-3">
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-seedling"></i></div>
+        <h3>Companion Planting</h3>
+        <p style="color: var(--text-light); font-size: 0.92rem; margin-bottom: 1rem;">Plant marigolds near tomatoes to deter nematodes. Basil repels flies and improves tomato flavour. Beans fix nitrogen for corn.</p>
+        <button class="btn btn-sm btn-outline" onclick="applyTip('Companion Planting')"><i class="fas fa-plus"></i> Add to Farm Plan</button>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-recycle"></i></div>
+        <h3>Straw Mulching</h3>
+        <p style="color: var(--text-light); font-size: 0.92rem; margin-bottom: 1rem;">Spread 2–3 inches of straw around plants. Retains moisture, blocks weeds, and decomposes into organic matter.</p>
+        <button class="btn btn-sm btn-outline" onclick="applyTip('Straw Mulching')"><i class="fas fa-plus"></i> Add to Farm Plan</button>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-clock"></i></div>
+        <h3>Early Morning Watering</h3>
+        <p style="color: var(--text-light); font-size: 0.92rem; margin-bottom: 1rem;">Water before 8 AM. Reduces evaporation by 30% and prevents fungal diseases. Drip irrigation is even better.</p>
+        <button class="btn btn-sm btn-outline" onclick="applyTip('Early Morning Watering')"><i class="fas fa-plus"></i> Add to Farm Plan</button>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-flask"></i></div>
+        <h3>DIY pH Test</h3>
+        <p style="color: var(--text-light); font-size: 0.92rem; margin-bottom: 1rem;">Mix soil with vinegar — if it fizzes, soil is alkaline. Mix with baking soda + water — if fizzes, acidic. Neither = neutral.</p>
+        <button class="btn btn-sm btn-outline" onclick="applyTip('DIY pH Test')"><i class="fas fa-plus"></i> Add to Farm Plan</button>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-tree"></i></div>
+        <h3>Windbreaks</h3>
+        <p style="color: var(--text-light); font-size: 0.92rem; margin-bottom: 1rem;">Plant tall grasses like vetiver on field edges. Cuts wind damage by up to 50% and prevents topsoil erosion.</p>
+        <button class="btn btn-sm btn-outline" onclick="applyTip('Windbreaks')"><i class="fas fa-plus"></i> Add to Farm Plan</button>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-calendar-alt"></i></div>
+        <h3>Crop Rotation</h3>
+        <p style="color: var(--text-light); font-size: 0.92rem; margin-bottom: 1rem;">Never grow the same crop family in the same spot 2 years in a row. Breaks pest and disease cycles naturally.</p>
+        <button class="btn btn-sm btn-outline" onclick="applyTip('Crop Rotation')"><i class="fas fa-plus"></i> Add to Farm Plan</button>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-bug"></i></div>
+        <h3>Attract Beneficial Insects</h3>
+        <p style="color: var(--text-light); font-size: 0.92rem; margin-bottom: 1rem;">Plant dill, fennel, and sunflowers around your farm. Ladybugs and lacewings will naturally control aphids.</p>
+        <button class="btn btn-sm btn-outline" onclick="applyTip('Beneficial Insects')"><i class="fas fa-plus"></i> Add to Farm Plan</button>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-tint"></i></div>
+        <h3>Olla Irrigation</h3>
+        <p style="color: var(--text-light); font-size: 0.92rem; margin-bottom: 1rem;">Bury porous clay pots near plants. They seep water slowly into root zone — saves up to 70% water vs flood irrigation.</p>
+        <button class="btn btn-sm btn-outline" onclick="applyTip('Olla Irrigation')"><i class="fas fa-plus"></i> Add to Farm Plan</button>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon"><i class="fas fa-sun"></i></div>
+        <h3>Solar-Powered Fencing</h3>
+        <p style="color: var(--text-light); font-size: 0.92rem; margin-bottom: 1rem;">Low-cost solar fence kits keep wild animals out. Ideal for remote fields with no electric supply.</p>
+        <button class="btn btn-sm btn-outline" onclick="applyTip('Solar Fencing')"><i class="fas fa-plus"></i> Add to Farm Plan</button>
+      </div>
+    </div>
+
+    <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--radius-lg); padding: 3rem 2rem; margin: 3rem 0; color: white;">
+      <div style="display:grid; grid-template-columns: 1fr auto; gap:2rem; align-items:center;">
+        <div>
+          <h3 style="color: white; font-size: 1.6rem; margin-bottom: 0.8rem;"><i class="fas fa-mobile-screen"></i> Weekly Farmer Tip</h3>
+          <p style="opacity: 0.95; font-size: 1.05rem; max-width: 600px;">Test your soil pH every 6 months. Correcting pH can increase nutrient uptake by 30% — often more impactful than adding fertilizer.</p>
+        </div>
+        <a href="contact.html" class="btn btn-white"><i class="fas fa-phone"></i> Get Soil Test</a>
+      </div>
+    </div>
+
+    <div style="background:white; border-radius: var(--radius-lg); padding: 2.5rem; border: 1px solid var(--border); margin-bottom: 2rem;">
+      <h2 style="text-align:center; margin-bottom: 0.5rem;">Save on inputs with these techniques</h2>
+      <p style="text-align:center; color: var(--text-light); margin-bottom: 2rem;">Average savings reported by our partner farmers</p>
+      <div class="cards-grid">
+        <div style="text-align:center;">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary);">-45%</div>
+          <p style="color: var(--text-light);">Fertilizer cost</p>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary);">-60%</div>
+          <p style="color: var(--text-light);">Water usage</p>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary);">-70%</div>
+          <p style="color: var(--text-light);">Pesticide spend</p>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary);">+34%</div>
+          <p style="color: var(--text-light);">Average yield</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+           <svg class="logo-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="32" cy="32" r="30" fill="#ffb300"/>
+  <path d="M32 52c0-12 8-18 16-20-4 10-8 15-16 20z" fill="#1b5e20"/>
+  <path d="M32 52c0-12-8-18-16-20 4 10 8 15 16 20z" fill="#66bb6a"/>
+  <path d="M32 18v22" stroke="#1b5e20" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="16" r="4" fill="#1b5e20"/>
+</svg>
+            AgriConsult
+          </div>
+          <p>Field-tested tips from real farms.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="dashboard.html">Dashboard</a><a href="tips.html">Tips</a><a href="appointments.html">Appointments</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Get in Touch</h4><div class="footer-contact-item"><i class="fas fa-phone"></i> +91 98765 43210</div><div class="footer-contact-item"><i class="fas fa-envelope"></i> help@agriconsult.in</div></div>
+      </div>
+      <div class="footer-bottom"><div>© 2025 AgriConsult. All rights reserved.</div><div>Made with <i class="fas fa-heart" style="color:#ff5252;"></i> for farmers</div></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

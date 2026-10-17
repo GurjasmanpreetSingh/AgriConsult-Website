@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · AgriConsult</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#1b5e20"/><path d="M32 52c0-12 8-18 16-20-4 10-8 15-16 20z" fill="#ffb300"/><path d="M32 52c0-12-8-18-16-20 4 10 8 15 16 20z" fill="#66bb6a"/><path d="M32 18v22" stroke="#e8f5e9" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="16" r="4" fill="#e8f5e9"/></svg>
+        <div class="logo-text">Agri<span>Consult</span></div>
+      </a>
+      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html" class="btn btn-sm nav-cta"><i class="fas fa-headset"></i> Free Consult</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container page-hero">
+    <h1>About AgriConsult</h1>
+    <p class="section-subtitle">Empowering Indian farmers with science-backed, sustainable solutions since 2018.</p>
+  </section>
+
+  <section class="container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;" class="about-grid">
+      <div>
+        <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=700&q=80" alt="Indian farmer in field" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); height: 450px; object-fit: cover; width: 100%;">
+      </div>
+      <div>
+        <h2>Our mission</h2>
+        <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1.05rem;">To bridge the gap between cutting-edge agricultural research and real-world farming. We deliver practical, affordable, and eco-friendly guidance that helps farmers increase yield while regenerating soil health.</p>
+        <h2 style="margin-top: 2rem;">Our vision</h2>
+        <p style="color: var(--text-light); font-size: 1.05rem;">A future where every Indian farmer has access to expert guidance, enabling food security, rural prosperity, and environmental sustainability.</p>
+      </div>
+    </div>
+
+    <div style="background: white; border-radius: var(--radius-lg); padding: 3rem 2rem; border: 1px solid var(--border); margin-bottom: 3rem;">
+      <h2 style="text-align: center; margin-bottom: 2.5rem;">Our impact so far</h2>
+      <div class="cards-grid">
+        <div style="text-align: center;">
+          <div style="font-size: 2.8rem; font-weight: 800; color: var(--primary);">2,400+</div>
+          <p style="color: var(--text-light); margin-top: 0.5rem;">Farmers consulted</p>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2.8rem; font-weight: 800; color: var(--primary);">18</div>
+          <p style="color: var(--text-light); margin-top: 0.5rem;">States covered</p>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2.8rem; font-weight: 800; color: var(--primary);">12,000</div>
+          <p style="color: var(--text-light); margin-top: 0.5rem;">Acres improved</p>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2.8rem; font-weight: 800; color: var(--primary);">30+</div>
+          <p style="color: var(--text-light); margin-top: 0.5rem;">Expert agronomists</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="text-align: center; margin-bottom: 0.5rem;">Meet our team</h2>
+    <p style="text-align: center; color: var(--text-light); margin-bottom: 2.5rem;">Certified experts with decades of combined experience.</p>
+
+    <div class="cards-grid-3" style="margin-bottom: 3rem;">
+      <div class="team-card">
+        <div class="team-avatar"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&q=80" alt="Dr. Ramesh Patel"></div>
+        <h4>Dr. Ramesh Patel</h4>
+        <div class="role">Chief Agronomist</div>
+        <p style="color: var(--text-light); font-size: 0.9rem;">PhD in Soil Science from IARI. 22 years of field experience across 14 states.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80" alt="Dr. Anjali Sharma"></div>
+        <h4>Dr. Anjali Sharma</h4>
+        <div class="role">Plant Pathologist</div>
+        <p style="color: var(--text-light); font-size: 0.9rem;">Expert in integrated pest management. Published 40+ research papers on biological control.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80" alt="Mr. Suresh Kumar"></div>
+        <h4>Mr. Suresh Kumar</h4>
+        <div class="role">Irrigation Specialist</div>
+        <p style="color: var(--text-light); font-size: 0.9rem;">Designed 500+ drip systems for small farms. Expert in water-efficient agriculture.</p>
+      </div>
+    </div>
+
+    <div style="background: var(--primary-soft); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 2rem;">
+      <h3 style="margin-bottom: 1rem;">Our values</h3>
+      <div class="cards-grid">
+        <div>
+          <h4><i class="fas fa-hand-holding-heart" style="color: var(--primary);"></i> Farmer First</h4>
+          <p style="color: var(--text-light); font-size: 0.92rem; margin-top: 0.4rem;">Every recommendation is designed around what works for the farmer's budget, land, and goals.</p>
+        </div>
+        <div>
+          <h4><i class="fas fa-flask" style="color: var(--primary);"></i> Science-Backed</h4>
+          <p style="color: var(--text-light); font-size: 0.92rem; margin-top: 0.4rem;">We only recommend methods backed by research and validated in real field trials.</p>
+        </div>
+        <div>
+          <h4><i class="fas fa-leaf" style="color: var(--primary);"></i> Sustainability</h4>
+          <p style="color: var(--text-light); font-size: 0.92rem; margin-top: 0.4rem;">Soil, water, and biodiversity are preserved for the next generation of farmers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+           <svg class="logo-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="32" cy="32" r="30" fill="#ffb300"/>
+  <path d="M32 52c0-12 8-18 16-20-4 10-8 15-16 20z" fill="#1b5e20"/>
+  <path d="M32 52c0-12-8-18-16-20 4 10 8 15 16 20z" fill="#66bb6a"/>
+  <path d="M32 18v22" stroke="#1b5e20" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="16" r="4" fill="#1b5e20"/>
+</svg>
+            AgriConsult
+          </div>
+          <p>Trusted by thousands of farmers across India.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="dashboard.html">Dashboard</a><a href="tips.html">Tips</a><a href="appointments.html">Appointments</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Get in Touch</h4><div class="footer-contact-item"><i class="fas fa-phone"></i> +91 98765 43210</div><div class="footer-contact-item"><i class="fas fa-envelope"></i> help@agriconsult.in</div></div>
+      </div>
+      <div class="footer-bottom"><div>© 2025 AgriConsult. All rights reserved.</div><div>Made with <i class="fas fa-heart" style="color:#ff5252;"></i> for farmers</div></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <style>@media(max-width:800px){.about-grid{grid-template-columns:1fr!important;}}</style>
+</body>
+</html>

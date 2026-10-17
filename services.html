@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services · AgriConsult</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#1b5e20"/><path d="M32 52c0-12 8-18 16-20-4 10-8 15-16 20z" fill="#ffb300"/><path d="M32 52c0-12-8-18-16-20 4 10 8 15 16 20z" fill="#66bb6a"/><path d="M32 18v22" stroke="#e8f5e9" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="16" r="4" fill="#e8f5e9"/></svg>
+        <div class="logo-text">Agri<span>Consult</span></div>
+      </a>
+      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-sm nav-cta"><i class="fas fa-headset"></i> Free Consult</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container page-hero">
+    <h1>Our Consulting Services</h1>
+    <p class="section-subtitle">Field-tested solutions for every farming challenge — from soil to harvest to market.</p>
+  </section>
+
+  <section class="container">
+    <div class="cards-grid-3">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-flask"></i></div>
+        <h3>Soil & Nutrient Management</h3>
+        <p>Complete soil testing (NPK, pH, organic carbon), custom fertilizer schedules, and organic amendments for sustainable fertility.</p>
+        <ul style="list-style:none; margin: 1rem 0; color: var(--text-light); font-size: 0.9rem;">
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Lab-based soil analysis</li>
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Custom fertilizer plan</li>
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Compost & biofertilizer guidance</li>
+        </ul>
+        <a href="contact.html" class="btn btn-sm">Book Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-shield-virus"></i></div>
+        <h3>Pest & Disease Management</h3>
+        <p>Integrated pest management with biological controls, early detection, and eco-friendly treatment protocols.</p>
+        <ul style="list-style:none; margin: 1rem 0; color: var(--text-light); font-size: 0.9rem;">
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Pest identification & monitoring</li>
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Biological control plans</li>
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Organic pesticide recipes</li>
+        </ul>
+        <a href="contact.html" class="btn btn-sm">Book Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-water"></i></div>
+        <h3>Water & Irrigation</h3>
+        <p>Drip and sprinkler system design, rainwater harvesting, and smart scheduling to save water and boost yield.</p>
+        <ul style="list-style:none; margin: 1rem 0; color: var(--text-light); font-size: 0.9rem;">
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Drip system design</li>
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Moisture sensor setup</li>
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Water audit & optimization</li>
+        </ul>
+        <a href="contact.html" class="btn btn-sm">Book Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-seedling"></i></div>
+        <h3>Crop Planning & Rotation</h3>
+        <p>Scientific crop selection, rotation strategies, and intercropping for higher income and healthier soil.</p>
+        <ul style="list-style:none; margin: 1rem 0; color: var(--text-light); font-size: 0.9rem;">
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Soil-crop matching</li>
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Market-oriented selection</li>
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Multi-crop planning</li>
+        </ul>
+        <a href="contact.html" class="btn btn-sm">Book Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-cloud-sun-rain"></i></div>
+        <h3>Climate Resilience</h3>
+        <p>Weather advisories, drought and flood mitigation, and climate-adaptive farming techniques.</p>
+        <ul style="list-style:none; margin: 1rem 0; color: var(--text-light); font-size: 0.9rem;">
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Local weather alerts</li>
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Drought-resistant varieties</li>
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Contingency crop plans</li>
+        </ul>
+        <a href="contact.html" class="btn btn-sm">Book Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Organic Certification</h3>
+        <p>Complete guidance through the 3-year transition period, documentation, and certification bodies.</p>
+        <ul style="list-style:none; margin: 1rem 0; color: var(--text-light); font-size: 0.9rem;">
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Conversion roadmap</li>
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Record-keeping setup</li>
+          <li style="margin-bottom:0.5rem;"><i class="fas fa-check" style="color:var(--primary);"></i> Inspection preparation</li>
+        </ul>
+        <a href="contact.html" class="btn btn-sm">Book Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div style="background: white; border-radius: var(--radius-lg); padding: 2.5rem; margin: 3rem 0; border: 1px solid var(--border);">
+      <h2 style="text-align:center; margin-bottom: 2rem;">How we work with you</h2>
+      <div class="cards-grid">
+        <div style="text-align:center;">
+          <div style="width:70px; height:70px; border-radius:50%; background: var(--primary-soft); color: var(--primary); display:flex; align-items:center; justify-content:center; font-size:1.6rem; font-weight:800; margin: 0 auto 1rem;">1</div>
+          <h4>Initial Consultation</h4>
+          <p style="color: var(--text-light); font-size:0.9rem; margin-top:0.5rem;">Free 30-min call to understand your farm, challenges, and goals.</p>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:70px; height:70px; border-radius:50%; background: var(--primary-soft); color: var(--primary); display:flex; align-items:center; justify-content:center; font-size:1.6rem; font-weight:800; margin: 0 auto 1rem;">2</div>
+          <h4>Field Assessment</h4>
+          <p style="color: var(--text-light); font-size:0.9rem; margin-top:0.5rem;">On-site visit with soil testing, water analysis, and crop inspection.</p>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:70px; height:70px; border-radius:50%; background: var(--primary-soft); color: var(--primary); display:flex; align-items:center; justify-content:center; font-size:1.6rem; font-weight:800; margin: 0 auto 1rem;">3</div>
+          <h4>Custom Plan</h4>
+          <p style="color: var(--text-light); font-size:0.9rem; margin-top:0.5rem;">Detailed action plan with timelines, inputs, and expected outcomes.</p>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:70px; height:70px; border-radius:50%; background: var(--primary-soft); color: var(--primary); display:flex; align-items:center; justify-content:center; font-size:1.6rem; font-weight:800; margin: 0 auto 1rem;">4</div>
+          <h4>Follow-up</h4>
+          <p style="color: var(--text-light); font-size:0.9rem; margin-top:0.5rem;">Season-long monitoring with WhatsApp and monthly reviews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <svg class="logo-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="32" cy="32" r="30" fill="#ffb300"/>
+  <path d="M32 52c0-12 8-18 16-20-4 10-8 15-16 20z" fill="#1b5e20"/>
+  <path d="M32 52c0-12-8-18-16-20 4 10 8 15 16 20z" fill="#66bb6a"/>
+  <path d="M32 18v22" stroke="#1b5e20" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="16" r="4" fill="#1b5e20"/>
+</svg>
+            AgriConsult
+          </div>
+          <p>Science-backed farming consultancy helping Indian farmers grow more with less.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="dashboard.html">Dashboard</a><a href="tips.html">Tips</a><a href="appointments.html">Appointments</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a><a href="#" onclick="event.preventDefault();showToast('Careers page coming soon!')">Careers</a></div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i> +91 98765 43210</div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i> help@agriconsult.in</div>
+        </div>
+      </div>
+      <div class="footer-bottom"><div>© 2025 AgriConsult. All rights reserved.</div><div>Made with <i class="fas fa-heart" style="color:#ff5252;"></i> for farmers</div></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
